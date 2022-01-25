@@ -25,7 +25,7 @@ st.write('# Beverage Recognition Object Detection')
 ## Pull in default image or user-selected image.
 if uploaded_file is None:
     # Default image.
-    url = 'https://github.com/KuroShinigami318/beverage-recognition/blob/master/assets/dataset/validation/IMG_20200914_195606.jpg?raw=true'
+    url = 'https://github.com/minhlong26052001/beverage-recognition/blob/master/assets/dataset/validation/IMG_20200914_195606.jpg?raw=true'
     image = Image.open(requests.get(url, stream=True).raw)
 
 else:
