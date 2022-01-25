@@ -1,0 +1,1 @@
+The MoViNet project has moved to [official/projects/movinet](https://github.com/tensorflow/models/tree/master/official/projects/movinet).

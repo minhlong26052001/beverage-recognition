@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imageimage</folder>
+	<filename>_Screenshot 2022-01-06 141519.png</filename>
+	<path>C:\Users\Long\Desktop\imageimage\_Screenshot 2022-01-06 141519.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>802</width>
+		<height>800</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>biaviet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>260</xmin>
+			<ymin>473</ymin>
+			<xmax>463</xmax>
+			<ymax>556</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,636 @@
+item {
+	name: "cocacola"
+	id: 1
+}
+item {
+	name: "biasaigon"
+	id: 2
+}
+item {
+	name: "heineken"
+	id: 3
+}
+item {
+	name: "tiger"
+	id: 4
+}
+item {
+	name: "333"
+	id: 5
+}
+item {
+	name: "fuzetea"
+	id: 6
+}
+item {
+	name: "aquarius"
+	id: 7
+}
+item {
+	name: "dasani"
+	id: 8
+}
+item {
+	name: "nutriboost"
+	id: 9
+}
+item {
+	name: "minutemaid"
+	id: 10
+}
+item {
+	name: "lavie"
+	id: 11
+}
+item {
+	name: "sprite"
+	id: 12
+}
+item {
+	name: "sapporo"
+	id: 13
+}
+item {
+	name: "zorok"
+	id: 14
+}
+item {
+	name: "budweiser"
+	id: 15
+}
+item {
+	name: "schweppes"
+	id: 16
+}
+item {
+	name: "nescafe"
+	id: 17
+}
+item {
+	name: "pepsi"
+	id: 18
+}
+item {
+	name: "wonderfarm"
+	id: 19
+}
+item {
+	name: "lipton"
+	id: 20
+}
+item {
+	name: "aquafina"
+	id: 21
+}
+item {
+	name: "7up"
+	id: 22
+}
+item {
+	name: "teaplus"
+	id: 23
+}
+item {
+	name: "vfresh"
+	id: 24
+}
+item {
+	name: "biastaropramen"
+	id: 25
+}
+item {
+	name: "coronaextra"
+	id: 26
+}
+item {
+	name: "asahi"
+	id: 27
+}
+item {
+	name: "bierelarue"
+	id: 28
+}
+item {
+	name: "redrock"
+	id: 29
+}
+item {
+	name: "biaviet"
+	id: 30
+}
+item {
+	name: "biahanoi"
+	id: 31
+}
+item {
+	name: "biahuda"
+	id: 32
+}
+item {
+	name: "biabeck"
+	id: 33
+}
+item {
+	name: "247"
+	id: 34
+}
+item {
+	name: "redbull"
+	id: 35
+}
+item {
+	name: "drthanh"
+	id: 36
+}
+item {
+	name: "fanta"
+	id: 37
+}
+item {
+	name: "biasanmiguel"
+	id: 38
+}
+item {
+	name: "sting"
+	id: 39
+}
+item {
+	name: "mirinda"
+	id: 40
+}
+item {
+	name: "biadaiviet"
+	id: 41
+}
+item {
+	name: "biahalida"
+	id: 42
+}
+item {
+	name: "biavietha"
+	id: 43
+}
+item {
+	name: "yomost"
+	id: 44
+}
+item {
+	name: "c2"
+	id: 45
+}
+item {
+	name: "carlsberg"
+	id: 46
+}
+item {
+	name: "sodaevervess"
+	id: 47
+}
+item {
+	name: "bitburgerbeer"
+	id: 48
+}
+item {
+	name: "konigpilsener"
+	id: 49
+}
+item {
+	name: "drpepper"
+	id: 50
+}
+item {
+	name: "mountaindew"
+	id: 51
+}
+item {
+	name: "crush"
+	id: 52
+}
+item {
+	name: "tropicanatwister"
+	id: 53
+}
+item {
+	name: "evian"
+	id: 54
+}
+item {
+	name: "pocarisweat"
+	id: 55
+}
+item {
+	name: "monster"
+	id: 56
+}
+item {
+	name: "starbucks"
+	id: 57
+}
+item {
+	name: "highlandscoffee"
+	id: 58
+}
+item {
+	name: "woongjin"
+	id: 59
+}
+item {
+	name: "sojuyipsejoo"
+	id: 60
+}
+item {
+	name: "dietcoke"
+	id: 61
+}
+item {
+	name: "budlight"
+	id: 62
+}
+item {
+	name: "labattblue"
+	id: 63
+}
+item {
+	name: "limca"
+	id: 64
+}
+item {
+	name: "mugrootbeer"
+	id: 65
+}
+item {
+	name: "brahma"
+	id: 66
+}
+item {
+	name: "quilmes"
+	id: 67
+}
+item {
+	name: "pyraser"
+	id: 68
+}
+item {
+	name: "gatorade"
+	id: 69
+}
+item {
+	name: "sanbenedetto"
+	id: 70
+}
+item {
+	name: "alisea"
+	id: 71
+}
+item {
+	name: "estathe"
+	id: 72
+}
+item {
+	name: "movida"
+	id: 73
+}
+item {
+	name: "spumador"
+	id: 74
+}
+item {
+	name: "niascaportofino"
+	id: 75
+}
+item {
+	name: "tab"
+	id: 76
+}
+item {
+	name: "stoney"
+	id: 77
+}
+item {
+	name: "vey"
+	id: 78
+}
+item {
+	name: "brisk"
+	id: 79
+}
+item {
+	name: "kinley"
+	id: 80
+}
+item {
+	name: "sunkist"
+	id: 81
+}
+item {
+	name: "icevalley"
+	id: 82
+}
+item {
+	name: "simplyfruity"
+	id: 83
+}
+item {
+	name: "maaza"
+	id: 84
+}
+item {
+	name: "real"
+	id: 85
+}
+item {
+	name: "slice"
+	id: 86
+}
+item {
+	name: "booster"
+	id: 87
+}
+item {
+	name: "powerfull"
+	id: 88
+}
+item {
+	name: "rani"
+	id: 89
+} 
+item {
+	name: "vitamalt"
+	id: 90
+} 
+item {
+	name: "bang"
+	id: 91
+} 
+item {
+	name: "powerhorse"
+	id: 92
+} 
+item {
+	name: "irnbru"
+	id: 93
+} 
+item {
+	name: "rubicon"
+	id: 94
+} 
+item {
+	name: "lilt"
+	id: 95
+} 
+item {
+	name: "sanpellegrino"
+	id: 96
+} 
+item {
+	name: "yazoo"
+	id: 97
+} 
+item {
+	name: "fruitshoot"
+	id: 98
+} 
+item {
+	name: "strathmore"
+	id: 99
+} 
+item {
+	name: "lucozade"
+	id: 100
+} 
+item {
+	name: "chocomel"
+	id: 101
+} 
+item {
+	name: "costacoffee"
+	id: 102
+} 
+item {
+	name: "royalcrowncola"
+	id: 103
+} 
+item {
+	name: "sundrop"
+	id: 104
+} 
+item {
+	name: "bigred"
+	id: 105
+} 
+item {
+	name: "A&W"
+	id: 106
+} 
+item {
+	name: "canadadry"
+	id: 107
+} 
+item {
+	name: "tango"
+	id: 108
+} 
+item {
+	name: "lighthouse"
+	id: 109
+} 
+item {
+	name: "yoohoo"
+	id: 110
+} 
+item {
+	name: "ski"
+	id: 111
+} 
+item {
+	name: "squirt"
+	id: 112
+} 
+item {
+	name: "newmix"
+	id: 113
+} 
+item {
+	name: "modelo"
+	id: 114
+} 
+item {
+	name: "jumex"
+	id: 115
+} 
+item {
+	name: "coronita"
+	id: 116
+} 
+item {
+	name: "vimto"
+	id: 117
+} 
+item {
+	name: "powerade"
+	id: 118
+} 
+item {
+	name: "benshaws"
+	id: 119
+} 
+item {
+	name: "noblehardcider"
+	id: 120
+} 
+item {
+	name: "erdingerbeer"
+	id: 121
+} 
+item {
+	name: "wentevineyardsbeer"
+	id: 122
+} 
+item {
+	name: "southernpines"
+	id: 123
+} 
+item {
+	name: "shani"
+	id: 124
+} 
+item {
+	name: "britvic"
+	id: 125
+} 
+item {
+	name: "highlandbrewing"
+	id: 126
+} 
+item {
+	name: "pleburbanwinery"
+	id: 127
+} 
+item {
+	name: "mamalittleyellapilsbeer"
+	id: 128
+} 
+item {
+	name: "bedofnailsbeer"
+	id: 129
+} 
+item {
+	name: "terrarpinbeer"
+	id: 130
+} 
+item {
+	name: "perrierbeer"
+	id: 131
+} 
+item {
+	name: "spindrift"
+	id: 132
+} 
+item {
+	name: "wickedweedbeer"
+	id: 133
+} 
+item {
+	name: "devilfootbeer"
+	id: 134
+} 
+item {
+	name: "futuresobright"
+	id: 135
+} 
+item {
+	name: "vitacoco"
+	id: 136
+} 
+item {
+	name: "tangerinequad"
+	id: 137
+} 
+item {
+	name: "line39wine"
+	id: 138
+} 
+item {
+	name: "vinamilk"
+	id: 139
+} 
+item {
+	name: "thtruemilk"
+	id: 140
+} 
+item {
+	name: "dalatmilk"
+	id: 141
+} 
+item {
+	name: "twincowsmilk"
+	id: 142
+} 
+item {
+	name: "lifmilk"
+	id: 143
+} 
+item {
+	name: "bialacviet"
+	id: 144
+} 
+item {
+	name: "tuborg"
+	id: 145
+} 
+item {
+	name: "nestea"
+	id: 146
+} 
+item {
+	name: "cappy"
+	id: 147
+} 
+item {
+	name: "naturaqua"
+	id: 148
+} 
+item {
+	name: "emotion"
+	id: 149
+} 
+item {
+	name: "bomba"
+	id: 150
+} 
+item {
+	name: "kozel"
+	id: 151
+} 
+item {
+	name: "kobanyai"
+	id: 152
+} 
+item {
+	name: "borsodi"
+	id: 153
+} 
+item {
+	name: "gosser"
+	id: 154
+} 
+item {
+	name: "strongbow"
+	id: 155
+} 
+item {
+	name: "hell"
+	id: 156
+} 
+item {
+	name: "thumsup"
+	id: 157
+}
+item {
+	name: "tropicana"
+	id: 158
+}
+item {
+	name: "probi"
+	id: 159
+}

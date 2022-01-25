@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imageimage</folder>
+	<filename>_Screenshot 2022-01-06 182436.png</filename>
+	<path>C:\Users\Long\Desktop\imageimage\_Screenshot 2022-01-06 182436.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>743</width>
+		<height>497</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>schweppes</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>408</xmin>
+			<ymin>260</ymin>
+			<xmax>500</xmax>
+			<ymax>321</ymax>
+		</bndbox>
+	</object>
+</annotation>

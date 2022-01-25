@@ -1,0 +1,7 @@
+###### Requirements ######
+Cython
+git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+object-detection-neko
+opencv-python-headless==4.1.2.30
+streamlit
+requests

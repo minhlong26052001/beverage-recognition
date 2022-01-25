@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imageimage</folder>
+	<filename>_biaviet.png</filename>
+	<path>C:\Users\Long\Desktop\imageimage\_biaviet.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>558</width>
+		<height>751</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>biaviet</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>175</xmin>
+			<ymin>323</ymin>
+			<xmax>377</xmax>
+			<ymax>409</ymax>
+		</bndbox>
+	</object>
+</annotation>

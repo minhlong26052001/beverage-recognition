@@ -1,0 +1,4 @@
+python model_main_tf2.py --model_dir=training --pipeline_config_path=config/pipeline.config --checkpoint_dir=training --eval_timeout=5400
+tensorboard --logdir=.
+python exporter_main_v2.py --trained_checkpoint_dir=training --output_directory=my_model --pipeline_config_path=config/pipeline.config --input_type image_tensor
+python confusion_matrix_tf2.py --input_tfrecord_path=assets/dataset/annotations/test.record --output_path=precision-recall-test.csv --inference_graph=my_model/saved_model --class_labels=assets/dataset/annotations/labelmap.pbtxt --draw_option=True --draw_save_path=result-images
