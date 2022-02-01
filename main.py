@@ -9,45 +9,31 @@ from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
 import tensorflow as tf
 
-from pydoc import getpager
-import streamlit as st
-import cv2
-import numpy as np
-import matplotlib.pyplot as plt 
-from PIL import Image
-import io
-import tensorflow as tf 
-import tensorflow.keras as keras
-from fashion_detection_model import SSD, Predictor
-from utils.utils import draw_boxes, cut_cothes
-from color_recognition import get_color, hex2name, rgb2hex
-from pattern_recognition import get_pattern
+st.sidebar.write('#### Select an image to upload.')
+uploaded_file = st.sidebar.file_uploader('',
+                                         type=['jpg','jpeg','png'],
+                                         accept_multiple_files=False)
 
-# st.sidebar.write('#### Select an image to upload.')
-# uploaded_file = st.sidebar.file_uploader('',
-#                                          type=['jpg','jpeg','png'],
-#                                          accept_multiple_files=False)
+## Add in sliders.
+confidence_threshold = st.sidebar.slider(
+    'Confidence threshold: What is the minimum acceptable confidence level for displaying a bounding box?', 0.0, 1.0,
+    0.5, 0.01)
 
-# ## Add in sliders.
-# confidence_threshold = st.sidebar.slider(
-#     'Confidence threshold: What is the minimum acceptable confidence level for displaying a bounding box?', 0.0, 1.0,
-#     0.5, 0.01)
+## Title.
+st.write('# Beverage Recognition Object Detection')
 
-# ## Title.
-# st.write('# Beverage Recognition Object Detection')
+## Pull in default image or user-selected image.
+if uploaded_file is None:
+    # Default image.
+    url = 'https://github.com/minhlong26052001/beverage-recognition/blob/master/assets/dataset/validation/IMG_20200914_195606.jpg?raw=true'
+    image = Image.open(requests.get(url, stream=True).raw)
 
-# ## Pull in default image or user-selected image.
-# if uploaded_file is None:
-#     # Default image.
-#     url = 'https://github.com/minhlong26052001/beverage-recognition/blob/master/assets/dataset/validation/IMG_20200914_195606.jpg?raw=true'
-#     image = Image.open(requests.get(url, stream=True).raw)
+else:
+    # User-selected image.
+    image = Image.open(uploaded_file)
 
-# else:
-#     # User-selected image.
-#     image = Image.open(uploaded_file)
-
-# ## Subtitle.
-# st.write('### Inferenced Image')
+## Subtitle.
+st.write('### Inferenced Image')
 
 
 @st.cache
@@ -108,66 +94,20 @@ def show_inference(model, labels, img):
     return image, output_dict
 
 
-# model_dir = 'my_model/saved_model'
-# label_map_path = 'assets/dataset/annotations/labelmap.pbtxt'
+model_dir = 'my_model/saved_model'
+label_map_path = 'assets/dataset/annotations/labelmap.pbtxt'
 
-# model = load_model(model_dir)
-# labels = load_labels(label_map_path)
-# # Display image.
-# image, output_dict = show_inference(model, labels, image)
-# st.image(image, use_column_width=True)
+model = load_model(model_dir)
+labels = load_labels(label_map_path)
+# Display image.
+image, output_dict = show_inference(model, labels, image)
+st.image(image, use_column_width=True)
 
-# # Display chart
-# st.write('### Beverages')
-# get_labels = lambda i: labels[i]['name']
-# detection_labels = []
-# for i in output_dict['detection_classes']:
-#     detection_labels.append(get_labels(i))
-# chart_data = pd.DataFrame(output_dict['detection_scores'], index=detection_labels, columns=['Probability'])
-# st.bar_chart(chart_data)
-
-if __name__ == "__main__":
-    st.sidebar.write('#### Select an image to upload.')
-    uploaded_file = st.sidebar.file_uploader('',
-                                            type=['jpg','jpeg','png'],
-                                            accept_multiple_files=False)
-
-    ## Add in sliders.
-    confidence_threshold = st.sidebar.slider(
-        'Confidence threshold: What is the minimum acceptable confidence level for displaying a bounding box?', 0.0, 1.0,
-        0.5, 0.01)
-
-    ## Title.
-    st.write('# Beverage Recognition Object Detection')
-
-    ## Pull in default image or user-selected image.
-    if uploaded_file is None:
-        # Default image.
-        url = 'https://github.com/minhlong26052001/beverage-recognition/blob/master/assets/dataset/validation/IMG_20200914_195606.jpg?raw=true'
-        image = Image.open(requests.get(url, stream=True).raw)
-
-    else:
-        # User-selected image.
-        image = Image.open(uploaded_file)
-
-    ## Subtitle.
-    st.write('### Inferenced Image')
-
-
-    model_dir = 'my_model/saved_model'
-    label_map_path = 'assets/dataset/annotations/labelmap.pbtxt'
-
-    model = load_model(model_dir)
-    labels = load_labels(label_map_path)
-    # Display image.
-    image, output_dict = show_inference(model, labels, image)
-    st.image(image, use_column_width=True)
-
-    # Display chart
-    st.write('### Beverages')
-    get_labels = lambda i: labels[i]['name']
-    detection_labels = []
-    for i in output_dict['detection_classes']:
-        detection_labels.append(get_labels(i))
-    chart_data = pd.DataFrame(output_dict['detection_scores'], index=detection_labels, columns=['Probability'])
-    st.bar_chart(chart_data)
+# Display chart
+st.write('### Beverages')
+get_labels = lambda i: labels[i]['name']
+detection_labels = []
+for i in output_dict['detection_classes']:
+    detection_labels.append(get_labels(i))
+chart_data = pd.DataFrame(output_dict['detection_scores'], index=detection_labels, columns=['Probability'])
+st.bar_chart(chart_data)
