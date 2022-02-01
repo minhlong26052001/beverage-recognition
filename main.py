@@ -11,7 +11,7 @@ import tensorflow as tf
 
 st.sidebar.write('#### Select an image to upload.')
 uploaded_file = st.sidebar.file_uploader('',
-                                         type=['jpg'],
+                                         type=['jpg','jpeg','png'],
                                          accept_multiple_files=False)
 
 ## Add in sliders.
